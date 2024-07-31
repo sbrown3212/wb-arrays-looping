@@ -3,7 +3,7 @@
 // Inside the function below, set firstItem to the first item of the input array called 'inputArray'.
 
 function first(inputArray) {
-  let firstItem = inputArray[0];
+  const firstItem = inputArray[0];
   return firstItem;
 }
 
@@ -48,7 +48,7 @@ function removeLast(inputArray) {
 // Inside the function below, remove the first item of inputArray.
 
 function removeFirst(inputArray) {
-  //Code here
+  inputArray.shift();
   return inputArray;
 }
 
@@ -58,7 +58,8 @@ function removeFirst(inputArray) {
 // You can assume the array will be at least 2 items long.
 
 function replaceFirstAndLast(inputArray) {
-  //Code here
+  inputArray[0] = 42;
+  inputArray[inputArray.length - 1] = 42;
   return inputArray;
 }
 
@@ -72,7 +73,11 @@ function replaceFirstAndLast(inputArray) {
 
 function addTen(inputArray) {
   let newArr = [];
-  // Code here
+  for (let num of inputArray) {
+    Number(num)
+    num += 10;
+    newArr.push(num);
+  }
 
   return newArr;
 }
@@ -83,7 +88,9 @@ function addTen(inputArray) {
 
 function count31() {
   let numbers = [];
-  // Code here
+  for (let i = 0; i < 32; i++) {
+    numbers.push(i);
+  }
 
   return numbers;
 }
@@ -94,7 +101,9 @@ function count31() {
 
 function countEvens() {
   let numbers = [];
-  // Code here
+  for (let i = 0; i < 21; i+=2) {
+    numbers.push(i);
+  }
 
   return numbers;
 }
