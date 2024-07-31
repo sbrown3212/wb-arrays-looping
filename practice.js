@@ -3,7 +3,7 @@
 // Inside the function below, set firstItem to the first item of the input array called 'inputArray'.
 
 function first(inputArray) {
-  //Code here
+  let firstItem = inputArray[0];
   return firstItem;
 }
 
