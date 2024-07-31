@@ -12,7 +12,7 @@ function first(inputArray) {
 // Inside the function below, set arrayLength to the length of inputArray.
 
 function getLength(inputArray) {
-  //Code here
+  let arrayLength = inputArray.length;
   return arrayLength;
 }
 
@@ -21,7 +21,7 @@ function getLength(inputArray) {
 // Inside the function below, set lastItem to the last item of inputArray.
 
 function last(inputArray) {
-  //Code here
+  let lastItem = inputArray[inputArray.length - 1]
   return lastItem;
 }
 
@@ -30,7 +30,7 @@ function last(inputArray) {
 // Inside the function below, add num to the end of inputArray.
 
 function addItem(inputArray, num) {
-  //Code here
+  inputArray.push(num);
   return inputArray;
 }
 
@@ -39,7 +39,7 @@ function addItem(inputArray, num) {
 // Inside the function below, remove the last item of inputArray.
 
 function removeLast(inputArray) {
-  //Code here
+  inputArray.pop();
   return inputArray;
 }
 
